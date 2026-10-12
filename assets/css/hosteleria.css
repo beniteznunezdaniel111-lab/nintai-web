@@ -1,0 +1,49 @@
+/* Hostelería · "la carta": papel de menú y serif cálida (claro) o brasa y slab (oscuro) */
+body{background-color:var(--fondo);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.08'/%3E%3C/svg%3E")}
+h1,h2,h3{letter-spacing:-.01em}
+em{color:var(--primario)}
+.marca{font-size:1.6rem}
+.kicker{color:var(--acento)}
+.btn{border-radius:99px}
+.btn-principal{background:var(--primario);color:#fff}
+
+/* hero */
+.hero-hosteleria{display:grid;gap:3rem;align-items:center;padding-top:clamp(2.5rem,6vw,5rem)}
+.hero-etiqueta{display:inline-flex;gap:.6rem;align-items:center;font:600 .82rem/1 var(--f-texto);letter-spacing:.2em;text-transform:uppercase;color:var(--acento);margin-bottom:1.4rem}
+.hero-etiqueta::before,.hero-etiqueta::after{content:"";width:1.6rem;height:1px;background:currentColor}
+.hero-hosteleria h1{font-size:clamp(3rem,11vw,6.8rem);line-height:.95}
+.hero-sub{margin-top:1.5rem;font-size:1.2rem;max-width:34rem;color:var(--suave)}
+.hero-sello{position:relative;justify-self:center;display:grid;justify-items:center;align-content:center;gap:.4rem;width:min(20rem,calc(100% - 1.5rem));aspect-ratio:1;border-radius:50%;padding:2.5rem;text-align:center;background:var(--superficie);border:1.5px solid var(--texto);box-shadow:0 0 0 .55rem var(--fondo),0 0 0 .65rem var(--texto);transform:rotate(-6deg)}
+.hero-sello .google{flex-direction:column;justify-content:center;gap:.35rem;margin:0}
+.hero-sello .google-nota{font-size:3.6rem}
+.hero-sello .hero-puntos{display:grid;gap:.2rem;margin-top:.6rem;font-size:.86rem;color:var(--suave)}
+.hero-sello .hero-puntos .i{display:none}
+.hero-sello .hero-foto{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:50%;opacity:.18}
+@media (min-width:900px){.hero-hosteleria{grid-template-columns:1.4fr 1fr}}
+
+/* carta: menú clásico */
+.sec-cab h2{font-size:clamp(2.4rem,6.5vw,4rem)}
+.carta-cat h3{border-bottom:0;text-align:center;font-size:clamp(1.8rem,5vw,2.5rem);display:flex;align-items:center;gap:1rem}
+.carta-cat h3::before,.carta-cat h3::after{content:"";flex:1;height:1px;background:var(--texto)}
+.carta-cats a{background:transparent;border-color:var(--texto)}
+.carta-cats a:hover{background:var(--texto);color:var(--fondo)}
+.plato h4{font-family:var(--f-texto)}
+.plato-precio{font-family:var(--f-display);font-size:1.2rem}
+.servicio-ico,.servicio-num{border-radius:50%}
+.opinion{border-radius:.3rem;background:var(--superficie);box-shadow:0 1px 0 var(--linea)}
+.opinion blockquote{font-family:var(--f-display);font-size:1.15rem;line-height:1.45}
+.destacado{background:var(--primario);color:#fff;border-radius:.4rem;text-align:center}
+.destacado h2{margin:0 auto}
+.destacado p{margin-left:auto;margin-right:auto;color:rgba(255,255,255,.85)}
+.destacado em,.destacado .kicker{color:#fff}
+.destacado .kicker{opacity:.85}
+
+/* variante oscura: brasa y humo */
+.v-oscuro{background-image:radial-gradient(70rem 30rem at 50% -8rem,color-mix(in srgb,var(--primario) 26%,transparent),transparent 70%),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.09'/%3E%3C/svg%3E")}
+.v-oscuro h1,.v-oscuro h2,.v-oscuro .carta-cat h3{text-transform:uppercase;letter-spacing:.01em}
+.v-oscuro .hero-hosteleria h1{font-size:clamp(2.8rem,10vw,6.2rem);line-height:.98}
+.v-oscuro .hero-sello{background:var(--superficie);border-color:var(--acento);box-shadow:0 0 0 .55rem var(--fondo),0 0 0 .65rem var(--acento)}
+.v-oscuro .btn-principal{color:#140d0a}
+.v-oscuro .destacado{background:linear-gradient(135deg,var(--primario),color-mix(in srgb,var(--primario) 55%,#000));}
+.v-oscuro .carta-cat h3::before,.v-oscuro .carta-cat h3::after{background:var(--linea)}
+.v-oscuro .carta-cats a{border-color:var(--linea)}

@@ -1,0 +1,56 @@
+/* Oficios · "parte de aviso": plano técnico, letra industrial condensada, ámbar de seguridad */
+body{background-color:var(--fondo);background-image:linear-gradient(color-mix(in srgb,var(--linea) 55%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--linea) 55%,transparent) 1px,transparent 1px);background-size:2rem 2rem;background-attachment:fixed}
+h1,h2,h3{font-weight:900;text-transform:uppercase;letter-spacing:.005em;line-height:.92}
+h3{font-weight:800}
+em{color:var(--texto);background:linear-gradient(transparent 58%,var(--acento) 58% 92%,transparent 92%);padding:0 .08em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.marca{font-weight:900;text-transform:uppercase;font-size:1.55rem;letter-spacing:.01em}
+.kicker{color:var(--primario)}
+.btn{border-radius:.35rem;text-transform:uppercase;letter-spacing:.04em;font-size:.92rem}
+.btn-grande{font-size:1rem}
+.btn-principal{background:var(--primario);color:#fff}
+.btn-tel{background:var(--texto);color:#fff;border-color:var(--texto)}
+
+/* hero + parte de aviso */
+.hero-oficios{display:grid;gap:2.5rem;padding-top:clamp(2.5rem,6vw,5rem)}
+.hero-etiqueta{display:inline-block;font:700 .85rem/1 var(--f-texto);letter-spacing:.16em;text-transform:uppercase;padding:.5rem .7rem;background:var(--texto);color:#fff;margin-bottom:1.25rem}
+.hero-oficios h1{font-size:clamp(3.1rem,12vw,6.6rem)}
+.hero-sub{margin-top:1.4rem;font-size:1.18rem;max-width:34rem;color:var(--suave)}
+.hero-puntos{display:grid;gap:.55rem;margin-top:1.5rem;font-weight:700}
+.hero-puntos li{display:flex;gap:.6rem;align-items:center}
+.hero-puntos .i{color:#fff;background:var(--primario);border-radius:.25rem;padding:.15rem;width:1.35rem;height:1.35rem}
+.parte{align-self:start;background:var(--superficie);border:2px solid var(--texto);box-shadow:.55rem .55rem 0 var(--texto);transform:rotate(-1.2deg);padding:0 0 1.4rem;max-width:26rem;width:100%;justify-self:center}
+.parte-cab{display:flex;justify-content:space-between;align-items:center;padding:.6rem 1rem;background:var(--primario);color:#fff;font:700 .78rem/1 var(--f-texto);letter-spacing:.14em;text-transform:uppercase}
+.parte-cab span:last-child{background:#1d9e55;padding:.3rem .5rem;border-radius:.2rem;letter-spacing:.06em}
+.parte-nombre{padding:1.1rem 1.25rem .25rem;font:800 1.5rem/1 var(--f-display);text-transform:uppercase}
+.parte-tel{display:block;margin:.5rem 1.25rem 0;padding:.6rem 0 .9rem;font:900 clamp(2.6rem,10vw,3.4rem)/1 var(--f-display);color:var(--primario);text-decoration:none;border-bottom:2px dashed var(--linea)}
+.parte-tel:hover{color:var(--texto)}
+.parte-datos{margin:0;padding:.9rem 1.25rem 0;display:grid;gap:.6rem}
+.parte-datos div{display:grid;grid-template-columns:5rem 1fr;gap:.5rem;font-size:.95rem}
+.parte-datos dt{font-weight:700;text-transform:uppercase;font-size:.75rem;letter-spacing:.12em;color:var(--suave);padding-top:.2rem}
+.parte-datos dd{margin:0}
+.parte .google{padding:0 1.25rem;margin-top:1.1rem}
+@media (min-width:900px){.hero-oficios{grid-template-columns:1.35fr 1fr;align-items:center}}
+
+/* secciones */
+.sec-cab h2{font-size:clamp(2.4rem,7vw,4.2rem)}
+.servicios{border:2px solid var(--texto);border-radius:0;background:var(--texto);gap:2px}
+.servicio-ico,.servicio-num{background:var(--acento);color:var(--texto);border-radius:.25rem}
+.servicio h3{font-size:1.55rem}
+.tarifas{border:2px solid var(--texto);border-radius:0}
+.tarifa{border-top:1px dashed var(--linea)}
+.tarifa .tarifa-precio{font-weight:900;font-size:2.2rem}
+.tarifa.is-destacada{background:color-mix(in srgb,var(--acento) 22%,var(--superficie))}
+.garantia{border:2px solid var(--texto);border-radius:0;box-shadow:.55rem .55rem 0 var(--primario)}
+.garantia-sello{border-width:3px;border-style:double;border-color:var(--primario);transform:rotate(-8deg)}
+.urgencias,.destacado{background:var(--primario);color:#fff;border-radius:0;position:relative;overflow:hidden}
+.urgencias::after{content:"";position:absolute;right:-3rem;top:-3rem;width:12rem;height:12rem;border-radius:50%;border:2.5rem solid color-mix(in srgb,var(--acento) 85%,transparent)}
+.urgencias em,.destacado em{color:var(--acento);background:none}
+.urgencias .intro,.destacado p{color:rgba(255,255,255,.82)}
+.urgencias .lista-check .i{color:var(--acento)}
+.urgencias .kicker,.destacado .kicker{color:var(--acento)}
+.paso{border:2px solid var(--texto);border-radius:0}
+.paso-n{border-radius:.25rem;background:var(--acento);color:var(--texto);font-weight:900}
+.opinion,.faq details,.cita,.persona{border-radius:0;border:2px solid var(--texto)}
+.faq summary::after{color:var(--texto)}
+.mapa{border-radius:0;border:2px solid var(--texto)}
+.barra-acciones{border-radius:.4rem}

@@ -1,0 +1,52 @@
+/* Talleres · asfalto y franjas de aviso: letra técnica, amarillo de seguridad, matrícula europea */
+body{background-color:var(--fondo);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.07'/%3E%3C/svg%3E")}
+h1,h2,h3{font-weight:700;text-transform:uppercase;letter-spacing:.01em;line-height:.98}
+em{color:var(--primario)}
+.marca{font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+.nav{background:color-mix(in srgb,var(--fondo) 85%,transparent)}
+.kicker{color:var(--primario)}
+.btn{border-radius:.25rem;text-transform:uppercase;letter-spacing:.06em;font:600 .95rem/1 var(--f-display)}
+.btn-principal{background:var(--primario);color:#111}
+.btn-tel{background:transparent;color:var(--texto);border-color:var(--linea)}
+.btn-linea{border-color:var(--linea)}
+
+/* hero */
+.hero-talleres{position:relative;display:grid;gap:2.5rem;padding-top:clamp(3rem,7vw,5.5rem)}
+.franja{position:absolute;left:0;right:0;top:0;height:.9rem;background:repeating-linear-gradient(-45deg,var(--primario) 0 1.1rem,#111 1.1rem 2.2rem);opacity:.95}
+.hero-etiqueta{font:600 .85rem/1 var(--f-display);letter-spacing:.2em;text-transform:uppercase;color:var(--primario);margin-bottom:1.25rem;display:flex;align-items:center;gap:.6rem}
+.hero-etiqueta::before{content:"";width:2rem;height:2px;background:var(--primario)}
+.hero-talleres h1{font-size:clamp(2.8rem,10.5vw,6rem)}
+.hero-sub{margin-top:1.4rem;font-size:1.15rem;max-width:34rem;color:var(--suave)}
+.hero-puntos{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.6rem}
+.hero-puntos li{display:flex;gap:.45rem;align-items:center;padding:.45rem .75rem;border:1px solid var(--linea);border-radius:.25rem;font-size:.92rem;background:var(--superficie)}
+.hero-puntos .i{color:var(--primario)}
+.hero-matricula{display:grid;gap:1rem;align-content:start;padding:1.5rem;border:1px solid var(--linea);border-radius:.4rem;background:linear-gradient(160deg,var(--superficie),color-mix(in srgb,var(--superficie) 60%,#000));position:relative}
+.hero-matricula::before{content:"CITA PREVIA";position:absolute;top:-.65rem;left:1rem;padding:0 .5rem;background:var(--fondo);font:600 .72rem/1.2 var(--f-display);letter-spacing:.2em;color:var(--primario)}
+.hero-matricula label{font-size:.95rem;color:var(--suave)}
+.hero-matricula .btn{justify-self:start}
+.hero-matricula .google{margin-top:.25rem}
+@media (min-width:900px){.hero-talleres{grid-template-columns:1.4fr 1fr;align-items:end}}
+
+/* secciones */
+.sec-cab h2{font-size:clamp(2.2rem,6vw,3.8rem)}
+.servicios{border-radius:.4rem;background:var(--linea)}
+.servicio{background:var(--superficie)}
+.servicio-ico,.servicio-num{background:transparent;border:1.5px solid var(--primario);color:var(--primario);border-radius:.25rem;font-family:var(--f-display)}
+.servicio h3{font-size:1.3rem}
+.urgencias,.destacado{background:var(--primario);color:#111;border-radius:.4rem;position:relative;overflow:hidden}
+.urgencias::before{content:"";position:absolute;left:0;right:0;bottom:0;height:.7rem;background:repeating-linear-gradient(-45deg,#111 0 .9rem,transparent .9rem 1.8rem)}
+.urgencias em,.destacado em{color:#111;text-decoration:underline;text-decoration-thickness:.12em;text-underline-offset:.12em}
+.urgencias .intro,.destacado p{color:rgba(17,17,17,.78)}
+.urgencias .kicker,.destacado .kicker{color:#111}
+.urgencias .lista-check .i{color:#111}
+.urgencias .btn-tel{color:#111;border-color:#111}
+.paso,.opinion,.faq details,.cita,.persona,.garantia,.tarifas{border-radius:.4rem}
+.paso-n{border-radius:.25rem;background:var(--primario);color:#111}
+.paso-n,.tarifa-precio{font-family:var(--f-display)}
+.garantia-sello{border-radius:.4rem;transform:rotate(-4deg)}
+.campo input,.campo select,.campo textarea{background:#0e0f10}
+.mapa{border-radius:.4rem}
+.barra-acciones{background:var(--superficie);border:1px solid var(--linea)}
+.barra-acciones a{color:var(--texto)}
+.barra-acciones a:first-child{background:var(--primario);color:#111}
+.aviso-demo{border-bottom-style:solid}

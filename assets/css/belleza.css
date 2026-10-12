@@ -1,0 +1,42 @@
+/* Belleza y salud · editorial suave: serif con carácter, arcos, crema y salvia */
+body{background:radial-gradient(60rem 40rem at 110% -10%,color-mix(in srgb,var(--acento) 35%,transparent),transparent 60%),radial-gradient(50rem 36rem at -20% 30%,color-mix(in srgb,var(--primario) 14%,transparent),transparent 60%),var(--fondo);background-attachment:fixed}
+h1,h2,h3{letter-spacing:-.015em;line-height:1.02}
+em{color:var(--primario);font-style:italic}
+.marca{font-size:1.5rem}
+.kicker{color:var(--primario);letter-spacing:.2em}
+.btn{border-radius:99px;font-weight:500}
+.btn-principal{background:var(--texto);color:var(--fondo)}
+.btn-tel{background:transparent}
+
+/* hero */
+.hero-belleza{display:grid;gap:2.5rem;align-items:center;padding-top:clamp(2.5rem,6vw,5rem)}
+.hero-arco{position:relative;width:min(100%,15rem);aspect-ratio:3/4;justify-self:center;border-radius:999px 999px 1.5rem 1.5rem;overflow:hidden;background:linear-gradient(170deg,color-mix(in srgb,var(--acento) 80%,#fff),var(--primario));box-shadow:0 2rem 4rem -2rem color-mix(in srgb,var(--primario) 60%,transparent)}
+.hero-arco::after{content:"";position:absolute;inset:.8rem;border:1.5px solid rgba(255,255,255,.55);border-radius:999px 999px 1rem 1rem;pointer-events:none}
+.hero-arco-letra{position:absolute;inset:0;display:grid;place-items:center;font:400 clamp(9rem,40vw,15rem)/1 var(--f-display);color:rgba(255,255,255,.88)}
+.hero-foto{width:100%;height:100%;object-fit:cover}
+.hero-etiqueta{font-size:.82rem;letter-spacing:.22em;text-transform:uppercase;color:var(--primario);margin-bottom:1.25rem}
+.hero-belleza h1{font-size:clamp(2.9rem,10vw,5.6rem)}
+.hero-sub{margin-top:1.4rem;font-size:1.2rem;max-width:32rem;color:var(--suave)}
+@media (min-width:900px){.hero-belleza{grid-template-columns:1.3fr .85fr;gap:4rem}.hero-arco{order:2;width:min(100%,24rem)}}
+
+/* secciones */
+.sec-cab{text-align:left}
+.sec-cab h2{font-size:clamp(2.3rem,6vw,3.8rem)}
+.servicios{display:block;background:none;border:0;border-radius:0;border-top:1px solid var(--texto)}
+.servicio{grid-template-columns:1fr auto;background:none;padding:1.3rem 0;border-bottom:1px solid var(--linea)}
+.servicio-ico,.servicio-num{display:none}
+.servicio-txt{grid-column:1}
+.servicio h3{font-size:1.55rem;margin:0}
+.servicio-meta{grid-column:2;grid-row:1/3;align-self:center;flex-direction:column;align-items:flex-end;gap:.2rem;text-align:right}
+.servicio-meta strong{font:400 1.45rem/1 var(--f-display)}
+@media (min-width:900px){.servicios{columns:2;column-gap:3rem}.servicio{break-inside:avoid}}
+.opinion{border-radius:1.5rem}
+.opinion blockquote{font:400 1.25rem/1.4 var(--f-display)}
+.paso,.faq details,.cita,.garantia,.persona,.tarifas{border-radius:1.5rem}
+.paso-n{background:var(--acento);color:var(--texto)}
+.persona-ini{background:var(--acento);color:var(--texto)}
+.urgencias,.destacado{border-radius:2rem;background:var(--primario)}
+.garantia-sello{border-color:var(--acento);color:var(--primario)}
+.mapa{border-radius:1.5rem}
+.barra-acciones{border-radius:99px}
+.barra-acciones a{border-radius:99px}
