@@ -1,0 +1,35 @@
+{
+ "fuente": "MDT05/MDT25/MDT200 cedidos por © Instituto Geográfico Nacional (CC BY 4.0)",
+ "unidad": "decimetros_uint16_le",
+ "anillos": [
+  {
+   "archivo": "relieve-0.bin",
+   "mitad": 1280,
+   "n": 513,
+   "min": 508.4669753250059,
+   "max": 774.0
+  },
+  {
+   "archivo": "relieve-1.bin",
+   "mitad": 4096,
+   "n": 257,
+   "min": 457.45978769274416,
+   "max": 982.6447753240825
+  },
+  {
+   "archivo": "relieve-2.bin",
+   "mitad": 16384,
+   "n": 257,
+   "min": 300.0976223293152,
+   "max": 1869.4866291184533
+  },
+  {
+   "archivo": "relieve-3.bin",
+   "mitad": 65536,
+   "n": 257,
+   "min": -0.1611910677036906,
+   "max": 1761.627327682538
+  }
+ ],
+ "cota_local": 723.0046588729651
+}

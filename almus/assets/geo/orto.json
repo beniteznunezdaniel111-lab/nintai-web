@@ -1,0 +1,96 @@
+{
+ "fuente": "PNOA cedido por © Instituto Geográfico Nacional (CC BY 4.0); zooms bajos con imágenes Copernicus Sentinel-2",
+ "lado": 2048,
+ "niveles": [
+  {
+   "z": 12,
+   "archivo": "orto-z12.webp",
+   "centro": [
+    -12.454,
+    11.139
+   ],
+   "mitad": 31360.348,
+   "kb": 785
+  },
+  {
+   "z": 13,
+   "archivo": "orto-z13.webp",
+   "centro": [
+    2.859,
+    -4.173
+   ],
+   "mitad": 15680.174,
+   "kb": 667
+  },
+  {
+   "z": 14,
+   "archivo": "orto-z14.webp",
+   "centro": [
+    2.859,
+    3.483
+   ],
+   "mitad": 7840.087,
+   "kb": 961
+  },
+  {
+   "z": 15,
+   "archivo": "orto-z15.webp",
+   "centro": [
+    -0.969,
+    -0.345
+   ],
+   "mitad": 3920.043,
+   "kb": 1047
+  },
+  {
+   "z": 16,
+   "archivo": "orto-z16.webp",
+   "centro": [
+    0.945,
+    -0.345
+   ],
+   "mitad": 1960.022,
+   "kb": 1129
+  },
+  {
+   "z": 17,
+   "archivo": "orto-z17.webp",
+   "centro": [
+    -0.012,
+    -0.345
+   ],
+   "mitad": 980.011,
+   "kb": 1140
+  },
+  {
+   "z": 18,
+   "archivo": "orto-z18.webp",
+   "centro": [
+    -0.012,
+    0.133
+   ],
+   "mitad": 490.005,
+   "kb": 1222
+  },
+  {
+   "z": 19,
+   "archivo": "orto-z19.webp",
+   "centro": [
+    -0.012,
+    -0.106
+   ],
+   "mitad": 245.003,
+   "kb": 937
+  },
+  {
+   "z": 20,
+   "archivo": "orto-z20.webp",
+   "centro": [
+    -0.012,
+    0.014
+   ],
+   "mitad": 122.501,
+   "kb": 562
+  }
+ ]
+}
